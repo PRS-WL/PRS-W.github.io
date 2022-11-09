@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - Flushing Blueprint</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./app/sass/style.css" />
+    <!-- Font-Awesome (cdnjs) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Header-Section -->
+    <header>
+      <p>ASK US ABOUT OUR MDO SIGNS!</p>
+      <p><i class="fa-solid fa-phone-flip"></i>CALL US AT (718) 463 1900</p>
+      <p>
+        <i class="fa-solid fa-envelope"></i>EMAIL US AT CS@FLUSHINGBLUEPRINT.COM
+      </p>
+    </header>
+    <!-- Hero-Section -->
+    <div class="hero">
+      <!-- Header of Hero -->
+      <div class="hero-header">
+        <a href="./index.html"
+          ><img
+            src="./assets/img/hero-logo.png"
+            alt="Logo-hero"
+            class="hero-header-img"
+        /></a>
+        <a href="#form" class="hero-header-btn">UPLOAD FILES</a>
+      </div>
+      <h4>Serving New York's print needs since 1924</h4>
+      <h1>Flushing Blueprint</h1>
+      <p>
+        Flushing Blueprint is a full-service digital print shop that has been
+        serving the New York metro area for over 90 years. We provide a full
+        range of printing services. We would love to assist you with your next
+        printing project—big or small!
+      </p>
+      <div class="hero-btns">
+        <a href="#form" class="upload-hero">UPLOAD YOUR FILES</a>
+        <a href="mailto:ghazivakili.p@gmail.com" class="email"
+          ><i class="fa-solid fa-paper-plane"></i>EMAIL US</a
+        >
+      </div>
+    </div>
+    <!-- How Can We Help Section -->
+    <div class="how-help">
+      <!-- The paragraphs  -->
+      <div class="paragraphs-how-help">
+        <h4>SERVICES</h4>
+        <h1>How can we help you today?</h1>
+      </div>
+      <!-- 3 Boxes  -->
+      <div class="help-wrapper">
+        <div class="help-box-01">
+          <h3>01.</h3>
+          <h5>Construction Printing</h5>
+          <p>Engineering plans Specbooks & manuals Scanning & archival</p>
+        </div>
+        <div class="help-box-02">
+          <h3>02.</h3>
+          <h5>Digital Printing</h5>
+          <p>
+            Flyers & brochures Business cards & letterhead Newsletters &
+            postcards
+          </p>
+        </div>
+        <div class="help-box-03">
+          <h3>03.</h3>
+          <h5>Color Graphics</h5>
+          <p>Signs & banners Trade show graphics Building graphics</p>
+        </div>
+      </div>
+    </div>
+    <!-- The form section -->
+    <div id="form">
+      <form class="form-file-input">
+        <p>UPLOAD YOUR FILES HERE</p>
+        <i class="fas fa-caret-down turn-icon"></i>
+        <!-- The Form's Drop-Down -->
+        <div class="form-drop-down">
+          <!-- First Column -->
+          <div class="drop-down-first-column">
+            <h3>Customer Info</h3>
+            <div class="input-file-drop-down">
+              <label for="company-name">Company Name</label>
+              <input type="text" id="company-name" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="contact-name">Contact Name</label>
+              <input type="text" id="contact-name" class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="address">Address</label>
+              <textarea
+                id="address"
+                cols="30"
+                rows="10"
+                class="input textarea"
+              ></textarea>
+            </div>
+            <div class="input-file-drop-down">
+              <label for="city">City</label>
+              <input type="text" id="city" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="state">State</label>
+              <input type="text" id="state" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="zip">Zip</label>
+              <input type="text" id="zip" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="phone">Phone</label>
+              <input type="number" id="phone" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="fax" class="thin">Fax</label>
+              <input type="text" id="fax" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="email">Email</label>
+              <input type="email" id="email" required class="input" />
+            </div>
+            <div class="instruction">
+              <label for="add-instruction" class="thin"
+                >Additional Instructions</label
+              >
+              <textarea
+                id="add-instruction"
+                cols="30"
+                rows="10"
+                class="input textarea-2"
+              ></textarea>
+            </div>
+          </div>
+          <!-- Second-column -->
+          <div class="drop-down-second-column">
+            <h3>Order Info</h3>
+            <div class="input-file-drop-down">
+              <label for="order">Ordered By</label>
+              <input type="text" id="order" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="Job">Job Name</label>
+              <input type="text" id="Job" class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="proj" class="thin">Project #</label>
+              <input type="text" id="proj" class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="po" class="thin">P.O.</label>
+              <input type="text" id="po" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="date">Date Needed</label>
+              <input type="date" id="date" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="time" class="thin">Time Needed</label>
+              <input type="number" id="time" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="original" class="thin">No. of Originals</label>
+              <input type="number" id="original" class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="copy" class="thin">No. of Copies</label>
+              <input type="number" id="copy" required class="input" />
+            </div>
+            <div class="input-file-drop-down">
+              <label for="size" class="thin">Original Size</label>
+              <input type="text" id="size" required class="input" />
+            </div>
+            <div class="checks-and-radios">
+              <p class="thin">Bindings</p>
+              <div class="checks-and-radios-inputs">
+                <div class="radio">
+                  <input type="radio" id="yes" name="radio" value="yes" />
+                  <label for="yes" class="thin">Yes</label>
+
+                  <input type="radio" id="no" name="radio" value="no" />
+                  <label for="no" name="radio" class="thin">No</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" id="check" />
+                  <label for="check" class="thin"
+                    >We have a pickup for this order</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- The file Input part in the drop-down -->
+          <div class="form-file-input-main">
+            <input type="file" id="file" />
+            <label for="file" class="label-form"
+              ><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+              <h1>Drag and drop or click here</h1>
+              <p>to attach your files</p></label
+            >
+          </div>
+          <!-- The Submit button -->
+          <input type="submit" value="Submit" class="submit" />
+        </div>
+      </form>
+    </div>
+    <!-- Next-Project Section -->
+    <div class="next-project">
+      <div class="video">
+        <!-- The gif -->
+        <img src="./assets/img/nex-project-video.gif" alt="" />
+      </div>
+      <!-- The Paragraphs -->
+      <div class="next-project-paragraphs">
+        <h3>LET'S GET IN TOUCH</h3>
+        <h1>Here to help with your next project</h1>
+        <p>
+          We’re excited to work with you on your next project, and we’re
+          confident that with our over 90 years of experience we’ll be able to
+          help your bring your vision to life!
+        </p>
+        <div class="address">
+          <p><i class="fa-solid fa-phone-flip"></i> (718) 463-1900</p>
+          <a href="mailto:ghazivakili.p@gmail.com"
+            ><i class="fa-solid fa-envelope"></i> CS@FLUSHINGBLUEPRINT.COM</a
+          >
+          <p>
+            <i aria-hidden="true" class="fas fa-map-pin"></i>132-15 NORTHERN
+            BLVD FLUSHING, NY 11354
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- The Map Section -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.950054269253!2d-73.83736378495432!3d40.76312324242403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2600f5ac2c929%3A0x2525892deee9a3bb!2s13215%20Northern%20Blvd%2C%20Flushing%2C%20NY%2011354%2C%20USA!5e0!3m2!1sen!2sde!4v1662322331258!5m2!1sen!2sde"
+        width="100%"
+        height="370"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <!-- Icons in the footer -->
+      <div class="icons">
+        <a href="https://www.facebook.com/flushingblueprint/" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://www.google.com/maps/place/Flushing+Blueprint+Inc/"
+          target="_blank"
+          ><i class="fab fa-google"></i
+        ></a>
+        <a
+          href="https://www.yelp.com/biz/flushing-blueprint-flushing"
+          target="_blank"
+          ><i class="fab fa-yelp"></i
+        ></a>
+      </div>
+      <!-- The paragraph in the footer -->
+      <p>Copyright 2022 © All rights Reserved by Flushing Blueprint Inc.</p>
+    </footer>
+  </body>
+  <!-- TPIMB ~~~/~~~ PRS-GH (S) // MH-Alikhani (T) -->
+</html>

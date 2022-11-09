@@ -1,0 +1,45 @@
+@import "../utils/mixins";
+// The form section
+#form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 25rem;
+  padding-top: 8rem;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid yellow;
+  width: 115rem;
+  height: 5rem;
+  font-family: "Montserrat";
+  font-size: 15px;
+  letter-spacing: 0.42rem;
+  color: yellow;
+  padding: 0 2rem;
+}
+.form-file-input > p {
+  cursor: pointer;
+}
+// responsive for mobiles
+@include mobile-devices {
+  #form {
+    margin-top: 20rem;
+    height: 50rem;
+  }
+  form {
+    margin: 30rem 3rem 0 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+// responsive for tablets
+@include tablet-devices {
+  form {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  }
+}
+// TPIMB ~~~/~~~ PRS-GH (S) // MH-Alikhani (T)

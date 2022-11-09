@@ -1,0 +1,39 @@
+@use "../base/reset";
+@use "../base/typography";
+@import "../utils/mixins";
+// Header of hero
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  padding-right: 0;
+  > a > img {
+    width: 8rem !important;
+    height: 8.5rem;
+  }
+  > .hero-header-btn {
+    @include button;
+    border: 0.2rem solid yellow;
+      color: yellow;
+
+  }
+  > .hero-header-btn:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.1);
+  }
+  // responsive for mobiles
+  @include mobile-devices {
+    .hero-header-btn {
+      display: none !important;
+    }
+  }
+  // responsive for tablets
+  @include tablet-devices {
+    .hero-header-btn {
+      display: none !important;
+    }
+  }
+}

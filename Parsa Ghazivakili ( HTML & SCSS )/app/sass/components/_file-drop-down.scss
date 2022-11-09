@@ -1,0 +1,259 @@
+@import "../utils/mixins";
+@keyframes fade-in {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+// The drop-down of the form
+.form-drop-down {
+  width: 115rem;
+  height: 100rem;
+  position: absolute;
+  display: none !important;
+  flex-direction: row;
+  background-color: white;
+  margin-left: -2.3rem;
+  margin-top: 104rem;
+  border: 0.3rem solid yellow;
+  border-top: none;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  padding: 8rem 0 0 10rem;
+  .drop-down-first-column {
+    margin-right: 10rem;
+  }
+  h3 {
+    color: #8c99a6;
+    letter-spacing: normal;
+    margin-bottom: 4rem;
+    font-family: "calibri";
+    font-size: 2rem;
+  }
+  // pre-inputs
+  .input-file-drop-down {
+    display: flex;
+    justify-content: space-between;
+    > div {
+      width: 50%;
+    }
+  }
+  // pre labels and paragraphs
+  label,
+  p {
+    color: black;
+    letter-spacing: normal;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  // input (some specific ones)
+  .input {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    width: 30rem;
+    height: 2.4rem;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.726);
+    box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.459);
+    border-radius: 2px;
+  }
+  // textarea
+  .textarea {
+    height: 5rem;
+  }
+  // hove rand focus of inputs and textareas
+  input:hover,
+  textarea:hover {
+    outline: none;
+    border: 1px solid #3f75ff;
+  }
+  input:focus,
+  textarea:focus {
+    box-shadow: 0px 0px 5px 1px #3f75ff9d;
+    border: 1px solid #3f75ff;
+  }
+  // the instruction part in the first column of the drop-down
+  .instruction {
+    display: flex;
+    flex-direction: column;
+    > * {
+      margin: 0;
+    }
+    .textarea-2 {
+      margin-top: 1rem;
+      width: 100%;
+      height: 10rem;
+    }
+  }
+  // checks and radios
+  .checks-and-radios {
+    display: flex;
+    > .checks-and-radios-inputs {
+      margin-left: 5.5rem;
+      > .radio {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+// the file-input part in the drop-down
+#file {
+  display: none;
+}
+div.form-file-input-main {
+  display: flex !important;
+  width: 91rem;
+  height: 23rem;
+  position: absolute;
+  margin-left: 0rem;
+  margin-top: 56rem;
+  background-color: #f0f2f4;
+  border: 4px dashed #8fa7b9;
+  .label-form {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  > * {
+    color: #8fa7b9;
+    font-family: "calibri";
+  }
+  i {
+    font-size: 9rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 3rem;
+    color: #8fa7b9;
+  }
+}
+// submit part
+input.submit {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 9rem;
+  height: 4rem;
+  color: white;
+  background-color: #2e78ba;
+  border: 1px solid #266297;
+  border-radius: 4px;
+  margin-left: 82rem;
+  margin-top: 80rem;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.submit:hover {
+  background-color: #245988;
+}
+.form-file-input:hover div.form-drop-down {
+  display: flex !important;
+  visibility: visible !important;
+}
+.form-file-input:hover {
+  border-bottom: none;
+}
+.form-file-input:hover .turn-icon {
+  transform: rotate(180deg);
+}
+label.thin,
+p.thin {
+  font-weight: 500;
+}
+.form-drop-down {
+  display: flex;
+}
+.file-form-drop-down-eth {
+  display: flex;
+  flex-direction: row;
+}
+// responsive for mobiles
+@include mobile-devices {
+  .form-drop-down {
+    display: flex;
+    flex-direction: column;
+    width: 54.8rem;
+    height: 170rem;
+    border: 3px solid yellow;
+    border-top: none;
+    margin-left: -2.5rem;
+    padding: 2rem;
+    margin-top: 174.7rem;
+    .drop-down-second-column,
+    .drop-down-first-column {
+      width: 50rem;
+      margin-top: 3rem;
+    }
+    .textarea {
+      height: 5rem;
+    }
+    .input {
+      width: 30rem;
+      height: 4rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+    label,
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .checks-and-radios-inputs {
+    margin-left: 13rem !important;
+  }
+  div.form-file-input-main {
+    width: 50rem;
+    margin-left: 0.2rem;
+    margin-top: 135rem;
+  }
+  input.submit {
+    margin-left: 41rem;
+    margin-top: 160rem;
+  }
+}
+// responsive for tablets
+@include tablet-devices {
+  .form-drop-down {
+    width: 84.3rem;
+    border: 5px solid yellow;
+    border-top: none;
+    padding: 5rem;
+    .input,
+    textarea {
+      width: 20rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+    label,
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .drop-down-first-column {
+      margin-right: 10rem;
+    }
+  }
+  div.form-file-input-main {
+    width: 73rem;
+    margin-left: 0.15rem;
+    margin-top: 62rem;
+  }
+  input.submit {
+    display: flex;
+    margin-top: 87rem;
+    margin-left: 64rem;
+  }
+  .checks-and-radios-inputs {
+    margin-left: 6.6rem !important;
+  }
+}
+// TPIMB ~~~/~~~ PRS-GH (S) // MH-Alikhani (T)

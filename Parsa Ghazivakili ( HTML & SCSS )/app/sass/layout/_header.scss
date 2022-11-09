@@ -1,0 +1,32 @@
+@use "../base/reset";
+@use "../base/typography";
+@import "../utils/_mixins.scss";
+// The header section
+header {
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  width: 100%;
+  height: 5rem;
+  padding-top: 0;
+  padding-left: 39rem;
+  P {
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: #383838;
+    font-weight: bold;
+    margin-right: 3rem;
+  }
+  i {
+    margin-right: 1rem;
+  }
+  // responsive for mobiles 
+  @include mobile-devices {
+    display: none;
+  }
+  // responsive for tablets
+  @include tablet-devices {
+    display: none;
+  }
+}
+// TPIMB ~~~/~~~ PRS-GH (S) // MH-Alikhani (T)

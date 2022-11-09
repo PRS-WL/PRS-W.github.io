@@ -1,0 +1,24 @@
+// responsive for mobiles
+@mixin mobile-devices {
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    @content;
+  }
+}
+// responsive for tablets
+@mixin tablet-devices {
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    @content;
+  }
+}
+// pre-buttons
+@mixin button {
+  text-decoration: none;
+  font-family: "roboto";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  padding: 1.1rem 2.5rem;
+    border-radius: 50px;
+  transition: 0.3s;
+}
+// TPIMB ~~~/~~~ PRS-GH (S) // MH-Alikhani (T)

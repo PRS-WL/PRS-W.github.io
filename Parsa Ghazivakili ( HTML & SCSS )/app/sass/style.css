@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Montserrat";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  width: 100%;
+  height: 5rem;
+  padding-top: 0;
+  padding-left: 39rem;
+}
+header P {
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #383838;
+  font-weight: bold;
+  margin-right: 3rem;
+}
+header i {
+  margin-right: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  header {
+    display: none;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    display: none;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 90rem;
+  background: url(../../../assets/img/hero-bg.jpg);
+  background-size: cover;
+  padding: 2rem 10rem;
+}
+.hero > h4 {
+  font-family: "montserrat";
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+.hero > h1 {
+  color: yellow;
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 13.4rem;
+  width: 30%;
+  line-height: 11.4rem;
+  margin-bottom: 3rem;
+}
+.hero > p {
+  font-family: "montserrat";
+  font-size: 1.8rem;
+  color: white;
+  line-height: 3.34rem;
+  width: 55rem;
+  margin-bottom: 8rem;
+}
+.hero .upload-hero {
+  text-decoration: none;
+  font-family: "roboto";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  padding: 1.1rem 2.5rem;
+  border-radius: 50px;
+  transition: 0.3s;
+  background-color: yellow;
+  background-color: yellow;
+  color: rgb(78, 78, 78);
+  font-size: 1.6rem;
+  margin-right: 2rem;
+}
+.hero .email {
+  text-decoration: none;
+  color: white;
+  font-family: "roboto";
+  font-size: 2rem;
+}
+.hero .email > i {
+  margin-right: 1rem;
+  color: yellow;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .hero > h1 {
+    margin-left: -6rem;
+    font-size: 12rem;
+    line-height: none;
+  }
+  .hero > p {
+    margin-left: -6rem;
+    font-size: 2.3rem;
+  }
+  .hero img {
+    margin-left: -6rem;
+  }
+  .hero > h4 {
+    margin-left: -6rem;
+    font-size: 2.5rem;
+  }
+  .hero .hero-btns {
+    display: flex;
+    flex-direction: column;
+    margin-left: -4rem;
+  }
+  .hero .hero-btns > a:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 5rem;
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+  }
+  .hero .hero-btns > a:last-child > * {
+    font-size: 2rem;
+  }
+}
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  padding-right: 0;
+}
+.hero-header > a > img {
+  width: 8rem !important;
+  height: 8.5rem;
+}
+.hero-header > .hero-header-btn {
+  text-decoration: none;
+  font-family: "roboto";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  padding: 1.1rem 2.5rem;
+  border-radius: 50px;
+  transition: 0.3s;
+  border: 0.2rem solid yellow;
+  color: yellow;
+}
+.hero-header > .hero-header-btn:hover {
+  background-color: yellow;
+  color: black;
+  transform: scale(1.1);
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .hero-header .hero-header-btn {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .hero-header .hero-header-btn {
+    display: none !important;
+  }
+}
+
+.how-help {
+  display: flex;
+  padding: 5rem;
+  padding-left: 12rem;
+  width: 100%;
+  height: 30rem;
+}
+.how-help h4 {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  letter-spacing: 0.56rem;
+  margin-bottom: 2rem;
+}
+.how-help h1 {
+  color: yellow;
+  font-family: "Libre Baskerville";
+  font-size: 5.2rem;
+  width: 30rem;
+  line-height: 5.04rem;
+}
+.how-help > .help-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 100%;
+}
+.how-help > .help-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+.how-help > .help-wrapper > div > h3 {
+  color: yellow;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto";
+  margin-bottom: 2rem;
+}
+.how-help > .help-wrapper > div > h5 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Roboto";
+  margin-bottom: 3rem;
+}
+.how-help > .help-wrapper > div > p {
+  color: grey;
+  font-size: 1.5rem;
+  line-height: 2.79rem;
+  font-family: "Roboto";
+  width: 17rem;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .how-help .paragraphs-how-help {
+    margin-top: 25rem;
+  }
+  .how-help .help-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .how-help .help-wrapper > div {
+    margin-bottom: 4rem;
+    margin-left: 7rem;
+  }
+  .how-help div.paragraphs-how-help {
+    margin-left: -9rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .how-help div.paragraphs-how-help {
+    margin-left: -9rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 50px;
+  margin: 50px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: yellow;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(165, 165, 0);
+}
+
+.next-project {
+  display: flex;
+  width: 100%;
+  height: 88rem;
+  padding: 20rem 10rem 20rem 17.5rem;
+  background: url(../../../assets/img/nex-project-bg.jpg);
+  background-size: cover;
+}
+.next-project > .next-project-paragraphs {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 51.4rem;
+  margin-left: 8rem;
+  background-color: rgba(0, 0, 0, 0.534);
+  border-radius: 20px;
+}
+.next-project > .next-project-paragraphs > h3 {
+  color: white;
+  letter-spacing: 0.56rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat";
+}
+.next-project > .next-project-paragraphs > h1 {
+  width: 85%;
+  color: yellow;
+  font-size: 9rem;
+  font-family: "Libre Baskerville";
+  line-height: 7.6rem;
+  margin-bottom: 5rem;
+}
+.next-project > .next-project-paragraphs > p {
+  width: 100%;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  line-height: 3.34rem;
+  margin-left: 0.5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .next-project .video img {
+    display: none;
+    position: absolute;
+  }
+  .next-project .next-project-paragraphs {
+    width: 70rem;
+    margin-left: -10rem;
+    height: 60rem;
+  }
+  .next-project .next-project-paragraphs > h1 {
+    font-size: 6rem;
+    line-height: normal;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .next-project .next-project-paragraphs > p {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .next-project .next-project {
+    padding-top: 20rem !important;
+  }
+  .next-project .video img {
+    width: 30rem;
+    margin-left: -8rem !important;
+  }
+  .next-project .next-project-paragraphs {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 60rem;
+    height: 50rem;
+    margin-left: 3rem;
+  }
+  .next-project .next-project-paragraphs h3 {
+    font-size: 1.6rem;
+  }
+  .next-project .next-project-paragraphs h1 {
+    font-size: 5rem;
+    line-height: normal;
+    width: 100%;
+  }
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 25rem;
+  padding-top: 8rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid yellow;
+  width: 115rem;
+  height: 5rem;
+  font-family: "Montserrat";
+  font-size: 15px;
+  letter-spacing: 0.42rem;
+  color: yellow;
+  padding: 0 2rem;
+}
+
+.form-file-input > p {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  #form {
+    margin-top: 20rem;
+    height: 50rem;
+  }
+  form {
+    margin: 30rem 3rem 0 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  form {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+.address > * {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.address i {
+  color: yellow;
+  margin-right: 0.5rem;
+}
+.address a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.address p {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.address p:last-child > i {
+  margin-right: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 20rem;
+}
+footer > .icons i {
+  font-size: 1.6rem;
+  color: #636363;
+  margin-right: 2.5rem;
+}
+footer > .icons i:hover {
+  color: #58BA1E;
+}
+footer > p {
+  color: #636363;
+  margin-top: 3rem;
+  font-family: "Roboto";
+  font-size: 1.6rem;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.form-drop-down {
+  width: 115rem;
+  height: 100rem;
+  position: absolute;
+  display: none !important;
+  flex-direction: row;
+  background-color: white;
+  margin-left: -2.3rem;
+  margin-top: 104rem;
+  border: 0.3rem solid yellow;
+  border-top: none;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  padding: 8rem 0 0 10rem;
+}
+.form-drop-down .drop-down-first-column {
+  margin-right: 10rem;
+}
+.form-drop-down h3 {
+  color: #8c99a6;
+  letter-spacing: normal;
+  margin-bottom: 4rem;
+  font-family: "calibri";
+  font-size: 2rem;
+}
+.form-drop-down .input-file-drop-down {
+  display: flex;
+  justify-content: space-between;
+}
+.form-drop-down .input-file-drop-down > div {
+  width: 50%;
+}
+.form-drop-down label,
+.form-drop-down p {
+  color: black;
+  letter-spacing: normal;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.form-drop-down .input {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  width: 30rem;
+  height: 2.4rem;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.726);
+  box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.459);
+  border-radius: 2px;
+}
+.form-drop-down .textarea {
+  height: 5rem;
+}
+.form-drop-down input:hover,
+.form-drop-down textarea:hover {
+  outline: none;
+  border: 1px solid #3f75ff;
+}
+.form-drop-down input:focus,
+.form-drop-down textarea:focus {
+  box-shadow: 0px 0px 5px 1px rgba(63, 117, 255, 0.6156862745);
+  border: 1px solid #3f75ff;
+}
+.form-drop-down .instruction {
+  display: flex;
+  flex-direction: column;
+}
+.form-drop-down .instruction > * {
+  margin: 0;
+}
+.form-drop-down .instruction .textarea-2 {
+  margin-top: 1rem;
+  width: 100%;
+  height: 10rem;
+}
+.form-drop-down .checks-and-radios {
+  display: flex;
+}
+.form-drop-down .checks-and-radios > .checks-and-radios-inputs {
+  margin-left: 5.5rem;
+}
+.form-drop-down .checks-and-radios > .checks-and-radios-inputs > .radio {
+  margin-bottom: 2rem;
+}
+
+#file {
+  display: none;
+}
+
+div.form-file-input-main {
+  display: flex !important;
+  width: 91rem;
+  height: 23rem;
+  position: absolute;
+  margin-left: 0rem;
+  margin-top: 56rem;
+  background-color: #f0f2f4;
+  border: 4px dashed #8fa7b9;
+}
+div.form-file-input-main .label-form {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+div.form-file-input-main > * {
+  color: #8fa7b9;
+  font-family: "calibri";
+}
+div.form-file-input-main i {
+  font-size: 9rem;
+}
+div.form-file-input-main h1 {
+  font-size: 3rem;
+}
+div.form-file-input-main p {
+  font-size: 3rem;
+  color: #8fa7b9;
+}
+
+input.submit {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 9rem;
+  height: 4rem;
+  color: white;
+  background-color: #2e78ba;
+  border: 1px solid #266297;
+  border-radius: 4px;
+  margin-left: 82rem;
+  margin-top: 80rem;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.submit:hover {
+  background-color: #245988;
+}
+
+.form-file-input:hover div.form-drop-down {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+.form-file-input:hover {
+  border-bottom: none;
+}
+
+.form-file-input:hover .turn-icon {
+  transform: rotate(180deg);
+}
+
+label.thin,
+p.thin {
+  font-weight: 500;
+}
+
+.form-drop-down {
+  display: flex;
+}
+
+.file-form-drop-down-eth {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .form-drop-down {
+    display: flex;
+    flex-direction: column;
+    width: 54.8rem;
+    height: 170rem;
+    border: 3px solid yellow;
+    border-top: none;
+    margin-left: -2.5rem;
+    padding: 2rem;
+    margin-top: 174.7rem;
+  }
+  .form-drop-down .drop-down-second-column,
+.form-drop-down .drop-down-first-column {
+    width: 50rem;
+    margin-top: 3rem;
+  }
+  .form-drop-down .textarea {
+    height: 5rem;
+  }
+  .form-drop-down .input {
+    width: 30rem;
+    height: 4rem;
+  }
+  .form-drop-down h3 {
+    font-size: 2.5rem;
+  }
+  .form-drop-down label,
+.form-drop-down p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .checks-and-radios-inputs {
+    margin-left: 13rem !important;
+  }
+  div.form-file-input-main {
+    width: 50rem;
+    margin-left: 0.2rem;
+    margin-top: 135rem;
+  }
+  input.submit {
+    margin-left: 41rem;
+    margin-top: 160rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .form-drop-down {
+    width: 84.3rem;
+    border: 5px solid yellow;
+    border-top: none;
+    padding: 5rem;
+  }
+  .form-drop-down .input,
+.form-drop-down textarea {
+    width: 20rem;
+  }
+  .form-drop-down h3 {
+    font-size: 2.5rem;
+  }
+  .form-drop-down label,
+.form-drop-down p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .form-drop-down .drop-down-first-column {
+    margin-right: 10rem;
+  }
+  div.form-file-input-main {
+    width: 73rem;
+    margin-left: 0.15rem;
+    margin-top: 62rem;
+  }
+  input.submit {
+    display: flex;
+    margin-top: 87rem;
+    margin-left: 64rem;
+  }
+  .checks-and-radios-inputs {
+    margin-left: 6.6rem !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  html {
+    font-size: 7px !important;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  html {
+    font-size: 8.5px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

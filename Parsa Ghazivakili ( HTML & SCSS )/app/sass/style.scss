@@ -1,0 +1,26 @@
+@use "./base/reset";
+@use "./base/typography";
+@use "./layout/header.scss";
+@use "./layout/hero";
+@use "./components/header-hero";
+@use "./layout/how-can-help";
+@use "./components/scroll-bar";
+@use "./layout/next-project";
+@use "./components/how-help-file-input";
+@use "./components/next-project-address";
+@use "./layout/footer";
+@use "./components/file-drop-down";
+@import "./utils/mixins";
+// responsive for mobiles
+@include mobile-devices {
+  html {
+    font-size: 7px !important;
+  }
+}
+// responsive for tablets
+@include tablet-devices {
+  html {
+    font-size: 8.5px !important;
+  }
+}
+// TPIMB ~~~/~~~ PRS-GH (S) // MH-Alikhani (T)
